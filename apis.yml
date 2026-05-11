@@ -1,0 +1,76 @@
+aid: shortcut
+name: Shortcut
+description: >-
+  Shortcut (formerly Clubhouse) is a cloud-based project management platform
+  built for software development teams, providing stories, epics, objectives,
+  Kanban boards, sprints, reporting, and integrations with GitHub, GitLab, and
+  Slack. The Shortcut REST API v3 exposes full CRUD access to stories, epics,
+  iterations, workflows, members, projects, and webhooks. Authentication uses
+  a per-account API token passed via the Shortcut-Token request header.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Project Management
+  - Agile
+  - Software Development
+  - Issue Tracking
+  - Kanban
+  - Sprint Planning
+  - Collaboration
+  - Developer Tools
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/shortcut/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: shortcut:rest-api-v3
+    name: Shortcut REST API v3
+    description: >-
+      RESTful API providing full CRUD access to stories, epics, iterations,
+      milestones, workflows, projects, teams, members, files, labels,
+      categories, and webhooks. Requests authenticate with a Shortcut-Token
+      header containing an API token generated at app.shortcut.com settings,
+      and are rate-limited to 200 requests per minute.
+    humanURL: https://developer.shortcut.com/api/rest/v3
+    baseURL: https://api.app.shortcut.com/api/v3
+    tags:
+      - Project Management
+      - Stories
+      - Epics
+      - Iterations
+      - Webhooks
+      - REST
+    properties:
+      - type: Documentation
+        url: https://developer.shortcut.com/api/rest/v3
+      - type: Authentication
+        url: >-
+          https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens
+      - type: Getting Started
+        url: >-
+          https://help.shortcut.com/hc/en-us/articles/207696406-Using-the-Shortcut-API
+      - type: API Cookbook
+        url: https://github.com/useshortcut/api-cookbook
+      - type: JavaScript SDK
+        url: https://www.npmjs.com/package/@useshortcut/client
+common:
+  - type: Website
+    url: https://www.shortcut.com
+  - type: Documentation
+    url: https://developer.shortcut.com
+  - type: Pricing
+    url: https://www.shortcut.com/pricing
+  - type: Sign Up
+    url: https://app.shortcut.com/signup
+  - type: Support
+    url: https://help.shortcut.com
+  - type: Blog
+    url: https://shortcut.com/blog
+  - type: GitHub
+    url: https://github.com/useshortcut
+  - type: Status
+    url: https://status.shortcut.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
