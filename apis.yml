@@ -47,7 +47,7 @@ apis:
       - type: Authentication
         url: >-
           https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens
-      - type: Getting Started
+      - type: GettingStarted
         url: >-
           https://help.shortcut.com/hc/en-us/articles/207696406-Using-the-Shortcut-API
       - type: API Cookbook
@@ -61,7 +61,7 @@ common:
     url: https://developer.shortcut.com
   - type: Pricing
     url: https://www.shortcut.com/pricing
-  - type: Sign Up
+  - type: SignUp
     url: https://app.shortcut.com/signup
   - type: Support
     url: https://help.shortcut.com
@@ -69,7 +69,7 @@ common:
     url: https://shortcut.com/blog
   - type: GitHub
     url: https://github.com/useshortcut
-  - type: Status
+  - type: StatusPage
     url: https://status.shortcut.com
 maintainers:
   - FN: Kin Lane
