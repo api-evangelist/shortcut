@@ -55,6 +55,8 @@ apis:
       - type: JavaScript SDK
         url: https://www.npmjs.com/package/@useshortcut/client
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/shortcutsoftware
   - type: Website
     url: https://www.shortcut.com
   - type: Documentation
