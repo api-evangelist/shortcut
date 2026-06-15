@@ -1,0 +1,500 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Shortcut REST API v3",
+    "version": "v3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Shortcut-Token",
+      "value": "{{Shortcut-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Categories",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Categories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/categories"
+          },
+          "docs": "List Categories"
+        },
+        {
+          "info": {
+            "name": "Create Category",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/categories"
+          },
+          "docs": "Create Category"
+        },
+        {
+          "info": {
+            "name": "Get Category",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/categories/:category-public-id",
+            "params": [
+              {
+                "name": "category-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Category"
+        },
+        {
+          "info": {
+            "name": "Update Category",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.app.shortcut.com/api/v3/categories/:category-public-id",
+            "params": [
+              {
+                "name": "category-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update Category"
+        },
+        {
+          "info": {
+            "name": "Delete Category",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.app.shortcut.com/api/v3/categories/:category-public-id",
+            "params": [
+              {
+                "name": "category-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Category"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Custom Fields",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Custom Fields",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/custom-fields"
+          },
+          "docs": "List Custom Fields"
+        },
+        {
+          "info": {
+            "name": "Get Custom Field",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/custom-fields/:custom-field-public-id",
+            "params": [
+              {
+                "name": "custom-field-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Custom Field"
+        },
+        {
+          "info": {
+            "name": "Update Custom Field",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.app.shortcut.com/api/v3/custom-fields/:custom-field-public-id",
+            "params": [
+              {
+                "name": "custom-field-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update Custom Field"
+        },
+        {
+          "info": {
+            "name": "Delete Custom Field",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.app.shortcut.com/api/v3/custom-fields/:custom-field-public-id",
+            "params": [
+              {
+                "name": "custom-field-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Custom Field"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Documents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/documents"
+          },
+          "docs": "List Documents"
+        },
+        {
+          "info": {
+            "name": "Create Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/documents"
+          },
+          "docs": "Create Document"
+        },
+        {
+          "info": {
+            "name": "Get Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/documents/:document-public-id",
+            "params": [
+              {
+                "name": "document-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Document"
+        },
+        {
+          "info": {
+            "name": "Update Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.app.shortcut.com/api/v3/documents/:document-public-id",
+            "params": [
+              {
+                "name": "document-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update Document"
+        },
+        {
+          "info": {
+            "name": "Delete Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.app.shortcut.com/api/v3/documents/:document-public-id",
+            "params": [
+              {
+                "name": "document-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Document"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Epics",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Epics",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epics"
+          },
+          "docs": "List Epics"
+        },
+        {
+          "info": {
+            "name": "Create Epic",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/epics"
+          },
+          "docs": "Create Epic"
+        },
+        {
+          "info": {
+            "name": "Get Epic",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Epic"
+        },
+        {
+          "info": {
+            "name": "Update Epic",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update Epic"
+        },
+        {
+          "info": {
+            "name": "Delete Epic",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Epic"
+        },
+        {
+          "info": {
+            "name": "List Epic Comments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id/comments",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List Epic Comments"
+        },
+        {
+          "info": {
+            "name": "Create Epic Comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id/comments",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Create Epic Comment"
+        },
+        {
+          "info": {
+            "name": "Get Epic Health",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id/health",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Epic Health"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Entity Templates",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Entity Templates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/entity-templates"
+          },
+          "docs": "List Entity Templates"
+        },
+        {
+          "info": {
+            "name": "Create Entity Template",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/entity-templates"
+          },
+          "docs": "Create Entity Template"
+        },
+        {
+          "info": {
+            "name": "Get Entity Template",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/entity-templates/:entity-template-public-id",
+            "params": [
+              {
+                "name": "entity-template-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Entity Template"
+        },
+        {
+          "info": {
+            "name": "Update Entity Template",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.app.shortcut.com/api/v3/entity-templates/:entity-template-public-id",
+            "params": [
+              {
+                "name": "entity-template-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update Entity Template"
+        },
+        {
+          "info": {
+            "name": "Delete Entity Template",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.app.shortcut.com/api/v3/entity-templates/:entity-template-public-id",
+            "params": [
+              {
+                "name": "entity-template-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Entity Template"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Workflows",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Epic Workflow",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epic-workflow"
+          },
+          "docs": "Get Epic Workflow"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
