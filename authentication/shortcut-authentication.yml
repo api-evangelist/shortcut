@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/shortcut-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: ShortcutToken
+  type: apiKey
+  in: header
+  parameter: Shortcut-Token
+  description: Personal API token generated at app.shortcut.com settings.
+  sources:
+  - openapi/shortcut-openapi.yml

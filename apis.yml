@@ -55,6 +55,14 @@ apis:
       - type: JavaScript SDK
         url: https://www.npmjs.com/package/@useshortcut/client
 common:
+  - type: TrustCenter
+    url: security/shortcut-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/shortcut-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/shortcut-domain-security.yml
+  - type: Authentication
+    url: authentication/shortcut-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/shortcutsoftware
   - type: Website
