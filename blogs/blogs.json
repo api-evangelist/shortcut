@@ -2,19 +2,14 @@
   "repo": "shortcut",
   "feeds": [
     {
-      "source": "https://shortcut.com/blog",
-      "feed_url": "",
-      "saved": 0,
-      "method": "agent-scrape"
-    },
-    {
       "source": "https://help.shortcut.com",
-      "feed_url": "",
+      "feed_url": "https://help.shortcut.com",
+      "title": "",
       "saved": 0,
-      "method": "agent-scrape"
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-27T13:10:00Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 6,
   "agent_pulled": "2026-06-27"
 }
