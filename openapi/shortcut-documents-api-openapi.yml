@@ -1,0 +1,74 @@
+openapi: 3.1.0
+info:
+  title: Shortcut REST API v3 Categories Documents API
+  description: RESTful API providing CRUD access to Shortcut project management resources including stories, epics, iterations, workflows, projects, teams, members, files, labels, categories, documents, custom fields, entity templates, and webhooks. Authenticates with a Shortcut-Token header containing an API token generated in app.shortcut.com settings. Rate-limited to 200 requests per minute; excess requests return HTTP 429.
+  version: v3
+  contact:
+    name: Shortcut Developer Support
+    url: https://developer.shortcut.com/api/rest/v3
+servers:
+- url: https://api.app.shortcut.com/api/v3
+  description: Shortcut REST API v3
+security:
+- ShortcutToken: []
+tags:
+- name: Documents
+paths:
+  /documents:
+    get:
+      summary: List Documents
+      operationId: listDocuments
+      tags:
+      - Documents
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Create Document
+      operationId: createDocument
+      tags:
+      - Documents
+      responses:
+        '201':
+          description: Created
+  /documents/{document-public-id}:
+    parameters:
+    - $ref: '#/components/parameters/DocumentPublicId'
+    get:
+      summary: Get Document
+      operationId: getDocument
+      tags:
+      - Documents
+      responses:
+        '200':
+          description: OK
+    put:
+      summary: Update Document
+      operationId: updateDocument
+      tags:
+      - Documents
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Delete Document
+      operationId: deleteDocument
+      tags:
+      - Documents
+      responses:
+        '204':
+          description: No Content
+components:
+  parameters:
+    DocumentPublicId:
+      name: document-public-id
+      in: path
+      required: true
+      schema:
+        type: string
+  securitySchemes:
+    ShortcutToken:
+      type: apiKey
+      in: header
+      name: Shortcut-Token
+      description: Personal API token generated at app.shortcut.com settings.

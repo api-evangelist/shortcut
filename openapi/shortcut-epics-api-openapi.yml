@@ -1,0 +1,104 @@
+openapi: 3.1.0
+info:
+  title: Shortcut REST API v3 Categories Epics API
+  description: RESTful API providing CRUD access to Shortcut project management resources including stories, epics, iterations, workflows, projects, teams, members, files, labels, categories, documents, custom fields, entity templates, and webhooks. Authenticates with a Shortcut-Token header containing an API token generated in app.shortcut.com settings. Rate-limited to 200 requests per minute; excess requests return HTTP 429.
+  version: v3
+  contact:
+    name: Shortcut Developer Support
+    url: https://developer.shortcut.com/api/rest/v3
+servers:
+- url: https://api.app.shortcut.com/api/v3
+  description: Shortcut REST API v3
+security:
+- ShortcutToken: []
+tags:
+- name: Epics
+paths:
+  /epics:
+    get:
+      summary: List Epics
+      operationId: listEpics
+      tags:
+      - Epics
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Create Epic
+      operationId: createEpic
+      tags:
+      - Epics
+      responses:
+        '201':
+          description: Created
+  /epics/{epic-public-id}:
+    parameters:
+    - $ref: '#/components/parameters/EpicPublicId'
+    get:
+      summary: Get Epic
+      operationId: getEpic
+      tags:
+      - Epics
+      responses:
+        '200':
+          description: OK
+    put:
+      summary: Update Epic
+      operationId: updateEpic
+      tags:
+      - Epics
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Delete Epic
+      operationId: deleteEpic
+      tags:
+      - Epics
+      responses:
+        '204':
+          description: No Content
+  /epics/{epic-public-id}/comments:
+    parameters:
+    - $ref: '#/components/parameters/EpicPublicId'
+    get:
+      summary: List Epic Comments
+      operationId: listEpicComments
+      tags:
+      - Epics
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Create Epic Comment
+      operationId: createEpicComment
+      tags:
+      - Epics
+      responses:
+        '201':
+          description: Created
+  /epics/{epic-public-id}/health:
+    parameters:
+    - $ref: '#/components/parameters/EpicPublicId'
+    get:
+      summary: Get Epic Health
+      operationId: getEpicHealth
+      tags:
+      - Epics
+      responses:
+        '200':
+          description: OK
+components:
+  parameters:
+    EpicPublicId:
+      name: epic-public-id
+      in: path
+      required: true
+      schema:
+        type: integer
+  securitySchemes:
+    ShortcutToken:
+      type: apiKey
+      in: header
+      name: Shortcut-Token
+      description: Personal API token generated at app.shortcut.com settings.

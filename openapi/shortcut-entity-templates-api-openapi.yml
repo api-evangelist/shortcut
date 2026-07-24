@@ -1,0 +1,74 @@
+openapi: 3.1.0
+info:
+  title: Shortcut REST API v3 Categories Entity Templates API
+  description: RESTful API providing CRUD access to Shortcut project management resources including stories, epics, iterations, workflows, projects, teams, members, files, labels, categories, documents, custom fields, entity templates, and webhooks. Authenticates with a Shortcut-Token header containing an API token generated in app.shortcut.com settings. Rate-limited to 200 requests per minute; excess requests return HTTP 429.
+  version: v3
+  contact:
+    name: Shortcut Developer Support
+    url: https://developer.shortcut.com/api/rest/v3
+servers:
+- url: https://api.app.shortcut.com/api/v3
+  description: Shortcut REST API v3
+security:
+- ShortcutToken: []
+tags:
+- name: Entity Templates
+paths:
+  /entity-templates:
+    get:
+      summary: List Entity Templates
+      operationId: listEntityTemplates
+      tags:
+      - Entity Templates
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Create Entity Template
+      operationId: createEntityTemplate
+      tags:
+      - Entity Templates
+      responses:
+        '201':
+          description: Created
+  /entity-templates/{entity-template-public-id}:
+    parameters:
+    - $ref: '#/components/parameters/EntityTemplatePublicId'
+    get:
+      summary: Get Entity Template
+      operationId: getEntityTemplate
+      tags:
+      - Entity Templates
+      responses:
+        '200':
+          description: OK
+    put:
+      summary: Update Entity Template
+      operationId: updateEntityTemplate
+      tags:
+      - Entity Templates
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Delete Entity Template
+      operationId: deleteEntityTemplate
+      tags:
+      - Entity Templates
+      responses:
+        '204':
+          description: No Content
+components:
+  parameters:
+    EntityTemplatePublicId:
+      name: entity-template-public-id
+      in: path
+      required: true
+      schema:
+        type: string
+  securitySchemes:
+    ShortcutToken:
+      type: apiKey
+      in: header
+      name: Shortcut-Token
+      description: Personal API token generated at app.shortcut.com settings.

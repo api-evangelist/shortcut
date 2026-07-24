@@ -1,0 +1,66 @@
+openapi: 3.1.0
+info:
+  title: Shortcut REST API v3 Categories Custom Fields API
+  description: RESTful API providing CRUD access to Shortcut project management resources including stories, epics, iterations, workflows, projects, teams, members, files, labels, categories, documents, custom fields, entity templates, and webhooks. Authenticates with a Shortcut-Token header containing an API token generated in app.shortcut.com settings. Rate-limited to 200 requests per minute; excess requests return HTTP 429.
+  version: v3
+  contact:
+    name: Shortcut Developer Support
+    url: https://developer.shortcut.com/api/rest/v3
+servers:
+- url: https://api.app.shortcut.com/api/v3
+  description: Shortcut REST API v3
+security:
+- ShortcutToken: []
+tags:
+- name: Custom Fields
+paths:
+  /custom-fields:
+    get:
+      summary: List Custom Fields
+      operationId: listCustomFields
+      tags:
+      - Custom Fields
+      responses:
+        '200':
+          description: OK
+  /custom-fields/{custom-field-public-id}:
+    parameters:
+    - $ref: '#/components/parameters/CustomFieldPublicId'
+    get:
+      summary: Get Custom Field
+      operationId: getCustomField
+      tags:
+      - Custom Fields
+      responses:
+        '200':
+          description: OK
+    put:
+      summary: Update Custom Field
+      operationId: updateCustomField
+      tags:
+      - Custom Fields
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Delete Custom Field
+      operationId: deleteCustomField
+      tags:
+      - Custom Fields
+      responses:
+        '204':
+          description: No Content
+components:
+  parameters:
+    CustomFieldPublicId:
+      name: custom-field-public-id
+      in: path
+      required: true
+      schema:
+        type: string
+  securitySchemes:
+    ShortcutToken:
+      type: apiKey
+      in: header
+      name: Shortcut-Token
+      description: Personal API token generated at app.shortcut.com settings.
