@@ -8,7 +8,19 @@ description: >-
   iterations, workflows, members, projects, and webhooks. Authentication uses
   a per-account API token passed via the Shortcut-Token request header.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shortcut.png
 tags:
   - Project Management
   - Agile
@@ -24,36 +36,93 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: shortcut:rest-api-v3
-    name: Shortcut REST API v3
-    description: >-
-      RESTful API providing full CRUD access to stories, epics, iterations,
-      milestones, workflows, projects, teams, members, files, labels,
-      categories, and webhooks. Requests authenticate with a Shortcut-Token
-      header containing an API token generated at app.shortcut.com settings,
-      and are rate-limited to 200 requests per minute.
-    humanURL: https://developer.shortcut.com/api/rest/v3
-    baseURL: https://api.app.shortcut.com/api/v3
-    tags:
-      - Project Management
-      - Stories
-      - Epics
-      - Iterations
-      - Webhooks
-      - REST
-    properties:
-      - type: Documentation
-        url: https://developer.shortcut.com/api/rest/v3
-      - type: Authentication
-        url: >-
-          https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens
-      - type: GettingStarted
-        url: >-
-          https://help.shortcut.com/hc/en-us/articles/207696406-Using-the-Shortcut-API
-      - type: API Cookbook
-        url: https://github.com/useshortcut/api-cookbook
-      - type: JavaScript SDK
-        url: https://www.npmjs.com/package/@useshortcut/client
+- aid: shortcut:rest-api-v3
+  name: Shortcut REST API v3
+  description: >-
+    RESTful API providing full CRUD access to stories, epics, iterations, milestones, workflows, projects,
+    teams, members, files, labels, categories, and webhooks. Requests authenticate with a Shortcut-Token
+    header containing an API token generated at app.shortcut.com settings, and are rate-limited to 200
+    requests per minute.
+  humanURL: https://developer.shortcut.com/api/rest/v3
+  baseURL: https://api.app.shortcut.com/api/v3
+  tags:
+  - Project Management
+  - Stories
+  - Epics
+  - Iterations
+  - Webhooks
+  - REST
+  properties:
+  - type: Documentation
+    url: https://developer.shortcut.com/api/rest/v3
+  - type: Authentication
+    url: https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens
+  - type: GettingStarted
+    url: https://help.shortcut.com/hc/en-us/articles/207696406-Using-the-Shortcut-API
+  - type: API Cookbook
+    url: https://github.com/useshortcut/api-cookbook
+  - type: JavaScript SDK
+    url: https://www.npmjs.com/package/@useshortcut/client
+- aid: shortcut:shortcut-categories-api
+  name: Shortcut Categories API
+  description: The Categories API from Shortcut — 2 operation(s) for categories.
+  humanURL: https://developer.shortcut.com/api/rest/v3
+  baseURL: https://api.app.shortcut.com/api/v3
+  tags:
+  - Categories
+  properties:
+  - type: OpenAPI
+    url: openapi/shortcut-categories-api-openapi.yml
+- aid: shortcut:shortcut-custom-fields-api
+  name: Shortcut Custom Fields API
+  description: The Custom Fields API from Shortcut — 2 operation(s) for custom fields.
+  humanURL: https://developer.shortcut.com/api/rest/v3
+  baseURL: https://api.app.shortcut.com/api/v3
+  tags:
+  - Custom Fields
+  properties:
+  - type: OpenAPI
+    url: openapi/shortcut-custom-fields-api-openapi.yml
+- aid: shortcut:shortcut-documents-api
+  name: Shortcut Documents API
+  description: The Documents API from Shortcut — 2 operation(s) for documents.
+  humanURL: https://developer.shortcut.com/api/rest/v3
+  baseURL: https://api.app.shortcut.com/api/v3
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/shortcut-documents-api-openapi.yml
+- aid: shortcut:shortcut-entity-templates-api
+  name: Shortcut Entity Templates API
+  description: The Entity Templates API from Shortcut — 2 operation(s) for entity templates.
+  humanURL: https://developer.shortcut.com/api/rest/v3
+  baseURL: https://api.app.shortcut.com/api/v3
+  tags:
+  - Entity Templates
+  properties:
+  - type: OpenAPI
+    url: openapi/shortcut-entity-templates-api-openapi.yml
+- aid: shortcut:shortcut-epics-api
+  name: Shortcut Epics API
+  description: The Epics API from Shortcut — 4 operation(s) for epics.
+  humanURL: https://developer.shortcut.com/api/rest/v3
+  baseURL: https://api.app.shortcut.com/api/v3
+  tags:
+  - Epics
+  properties:
+  - type: OpenAPI
+    url: openapi/shortcut-epics-api-openapi.yml
+- aid: shortcut:shortcut-workflows-api
+  name: Shortcut Workflows API
+  description: The Workflows API from Shortcut — 1 operation(s) for workflows.
+  humanURL: https://developer.shortcut.com/api/rest/v3
+  baseURL: https://api.app.shortcut.com/api/v3
+  tags:
+  - Workflows
+  properties:
+  - type: OpenAPI
+    url: openapi/shortcut-workflows-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/shortcut-agentic-access.yml
