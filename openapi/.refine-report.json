@@ -1,0 +1,24 @@
+{
+  "provider": "shortcut",
+  "sources": [
+    "shortcut-categories-api-openapi.yml",
+    "shortcut-custom-fields-api-openapi.yml",
+    "shortcut-documents-api-openapi.yml",
+    "shortcut-entity-templates-api-openapi.yml",
+    "shortcut-epics-api-openapi.yml",
+    "shortcut-workflows-api-openapi.yml"
+  ],
+  "outputs": [
+    "shortcut-categories-api-openapi.yml",
+    "shortcut-custom-fields-api-openapi.yml",
+    "shortcut-documents-api-openapi.yml",
+    "shortcut-entity-templates-api-openapi.yml",
+    "shortcut-epics-api-openapi.yml",
+    "shortcut-workflows-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
