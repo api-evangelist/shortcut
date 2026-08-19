@@ -1,0 +1,156 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Shortcut REST API v3 Categories Epics API",
+    "version": "v3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Shortcut-Token",
+      "value": "{{Shortcut-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Epics",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Epics",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epics"
+          },
+          "docs": "List Epics"
+        },
+        {
+          "info": {
+            "name": "Create Epic",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/epics"
+          },
+          "docs": "Create Epic"
+        },
+        {
+          "info": {
+            "name": "Get Epic",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Epic"
+        },
+        {
+          "info": {
+            "name": "Update Epic",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update Epic"
+        },
+        {
+          "info": {
+            "name": "Delete Epic",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Epic"
+        },
+        {
+          "info": {
+            "name": "List Epic Comments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id/comments",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List Epic Comments"
+        },
+        {
+          "info": {
+            "name": "Create Epic Comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id/comments",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Create Epic Comment"
+        },
+        {
+          "info": {
+            "name": "Get Epic Health",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/epics/:epic-public-id/health",
+            "params": [
+              {
+                "name": "epic-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Epic Health"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

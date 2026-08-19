@@ -1,0 +1,363 @@
+{
+  "item": [
+    {
+      "id": "326993d2-cc33-4242-9227-fe96e520657c",
+      "name": "Custom Fields",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f02d24da-e7e3-4f98-a177-4ae993c6ce68",
+          "name": "List Custom Fields",
+          "request": {
+            "name": "List Custom Fields",
+            "description": {},
+            "url": {
+              "path": [
+                "custom-fields"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "33a0eeab-7ca6-435f-871d-7ee06f748d0d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "custom-fields"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Shortcut-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f3d1416e-6345-411f-89fc-afe94d434b10",
+          "name": "Get Custom Field",
+          "request": {
+            "name": "Get Custom Field",
+            "description": {},
+            "url": {
+              "path": [
+                "custom-fields",
+                ":custom-field-public-id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "custom-field-public-id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2ab81beb-6e8e-4bdf-b49c-a2369d906278",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "custom-fields",
+                    ":custom-field-public-id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "custom-field-public-id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Shortcut-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e3c86268-831a-4879-b414-bf44ff3cda30",
+          "name": "Update Custom Field",
+          "request": {
+            "name": "Update Custom Field",
+            "description": {},
+            "url": {
+              "path": [
+                "custom-fields",
+                ":custom-field-public-id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "custom-field-public-id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "PUT",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "74a4571e-8478-4043-925a-91238059c8e0",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "custom-fields",
+                    ":custom-field-public-id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "custom-field-public-id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Shortcut-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "91343968-9c8a-4a55-9e30-9c1997cbd37b",
+          "name": "Delete Custom Field",
+          "request": {
+            "name": "Delete Custom Field",
+            "description": {},
+            "url": {
+              "path": [
+                "custom-fields",
+                ":custom-field-public-id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "custom-field-public-id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9ae80928-7b06-46d5-9157-a7470f3e2280",
+              "name": "No Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "custom-fields",
+                    ":custom-field-public-id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "custom-field-public-id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Shortcut-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.app.shortcut.com/api/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Shortcut-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "c5768c86-9519-4af9-b63f-cea284c1ef57",
+    "name": "Shortcut REST API v3 Categories Custom Fields API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RESTful API providing CRUD access to Shortcut project management resources including stories, epics, iterations, workflows, projects, teams, members, files, labels, categories, documents, custom fields, entity templates, and webhooks. Authenticates with a Shortcut-Token header containing an API token generated in app.shortcut.com settings. Rate-limited to 200 requests per minute; excess requests return HTTP 429.\n\nContact Support:\n Name: Shortcut Developer Support",
+      "type": "text/plain"
+    }
+  }
+}

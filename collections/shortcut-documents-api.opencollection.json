@@ -1,0 +1,102 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Shortcut REST API v3 Categories Documents API",
+    "version": "v3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Shortcut-Token",
+      "value": "{{Shortcut-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Documents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/documents"
+          },
+          "docs": "List Documents"
+        },
+        {
+          "info": {
+            "name": "Create Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/documents"
+          },
+          "docs": "Create Document"
+        },
+        {
+          "info": {
+            "name": "Get Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/documents/:document-public-id",
+            "params": [
+              {
+                "name": "document-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Document"
+        },
+        {
+          "info": {
+            "name": "Update Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.app.shortcut.com/api/v3/documents/:document-public-id",
+            "params": [
+              {
+                "name": "document-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update Document"
+        },
+        {
+          "info": {
+            "name": "Delete Document",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.app.shortcut.com/api/v3/documents/:document-public-id",
+            "params": [
+              {
+                "name": "document-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Document"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

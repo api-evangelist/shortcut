@@ -1,0 +1,102 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Shortcut REST API v3 Categories API",
+    "version": "v3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Shortcut-Token",
+      "value": "{{Shortcut-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Categories",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Categories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/categories"
+          },
+          "docs": "List Categories"
+        },
+        {
+          "info": {
+            "name": "Create Category",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.app.shortcut.com/api/v3/categories"
+          },
+          "docs": "Create Category"
+        },
+        {
+          "info": {
+            "name": "Get Category",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.app.shortcut.com/api/v3/categories/:category-public-id",
+            "params": [
+              {
+                "name": "category-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Category"
+        },
+        {
+          "info": {
+            "name": "Update Category",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.app.shortcut.com/api/v3/categories/:category-public-id",
+            "params": [
+              {
+                "name": "category-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update Category"
+        },
+        {
+          "info": {
+            "name": "Delete Category",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.app.shortcut.com/api/v3/categories/:category-public-id",
+            "params": [
+              {
+                "name": "category-public-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Category"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
