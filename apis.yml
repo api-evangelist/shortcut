@@ -50,6 +50,13 @@ apis:
   - Stories
   - Epics
   - Iterations
+  - Webhook
+  - REST
+  tags_raw:
+  - Project Management
+  - Stories
+  - Epics
+  - Iterations
   - Webhooks
   - REST
   properties:
