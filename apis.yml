@@ -8,6 +8,18 @@ description: >-
   iterations, workflows, members, projects, and webhooks. Authentication uses
   a per-account API token passed via the Shortcut-Token request header.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
