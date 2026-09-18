@@ -61,7 +61,7 @@ apis:
   tags:
   - Project Management
   - Stories
-  - Epics
+  - Epic
   - Iterations
   - Webhook
   - REST
@@ -129,6 +129,8 @@ apis:
   humanURL: https://developer.shortcut.com/api/rest/v3
   baseURL: https://api.app.shortcut.com/api/v3
   tags:
+  - Epic
+  tags_raw:
   - Epics
   properties:
   - type: OpenAPI

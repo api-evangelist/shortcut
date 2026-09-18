@@ -1,12 +1,7 @@
 {
   "provider": "shortcut",
   "sources": [
-    "shortcut-categories-api-openapi.yml",
-    "shortcut-custom-fields-api-openapi.yml",
-    "shortcut-documents-api-openapi.yml",
-    "shortcut-entity-templates-api-openapi.yml",
-    "shortcut-epics-api-openapi.yml",
-    "shortcut-workflows-api-openapi.yml"
+    "_original/shortcut-openapi.yml"
   ],
   "outputs": [
     "shortcut-categories-api-openapi.yml",
@@ -19,6 +14,23 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "shortcut-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "shortcut-openapi.yml: declared missing tag: Categories",
+    "shortcut-openapi.yml: declared missing tag: Custom Fields",
+    "shortcut-openapi.yml: declared missing tag: Documents",
+    "shortcut-openapi.yml: declared missing tag: Entity Templates",
+    "shortcut-openapi.yml: declared missing tag: Epics",
+    "shortcut-openapi.yml: declared missing tag: Workflows",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "shortcut-categories-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "shortcut-custom-fields-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "shortcut-documents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "shortcut-entity-templates-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "shortcut-epics-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "shortcut-workflows-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
